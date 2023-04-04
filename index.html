@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Eutimio Briceno">
+   <meta name="description" content="Pagina web para busqueda de direcciones ip y dominios">
+   <meta name="keywords" content="HTML5, CSS3, Javascript">
+   <title>FindYou</title>
+   <!-- CSS Leaflet -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+   integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+   crossorigin=""/>
+   <!-- CSS Styles -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="/public/maps.png" type="image/x-icon">
+</head>
+<body>
+   <nav class="navi">
+      <div class="prin">
+         <a href="/">FIND<span>YOU</span></a>
+         <img src="/public/maps.png" alt="notfund">
+      </div>
+      <section class="inp">
+         <form id="form">
+            <input type="text" id="ip" class="buscador" name="ipss" placeholder="192.168.0.1" autofocus>
+            <button id="infosnd" class="btnForm"><img src="./public/lupa.png" alt="notfund" class="lup"></button>
+         </form>
+      </section>
+      <section class="tipos">
+         <div class="botones">
+            <button id="Ipbt" class="btnFilter">Ip</button>
+            <button id="btnDomain" class="btnFilterDo">Dominio</button>
+         </div>
+      </section>
+      <label class="fin" id="fin">
+         <input type="checkbox" id="check">
+         <span class="check"></span>
+      </label>
+
+   </nav>
+   <main class="cent">
+      <section id="map" class="map"></section>
+      <section id="info"></section>
+   </main>
+
+   <footer class="footer">
+      <div class="text-footer">
+          <p>Todos los derechos reservados por <a href="/">FIND<span>YOU</span></a>.</p>
+          <address>bricenovalecillose@uvm.edu.ve</address>
+      </div>
+  </footer>
+
+   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+   integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+   crossorigin=""></script>
+   <script src="index.js"></script>
+</body>
+</html>
